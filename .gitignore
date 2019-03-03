@@ -6,3 +6,6 @@ ehthumbs.db
 Thumbs.db
 .DS_Store
 
+# Bot log #
+posts_replied_to.txt
+

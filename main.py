@@ -2,16 +2,18 @@ import praw
 import re
 import os
 import sys
-import configparser
 
-config = configparser.ConfigParser()
-config.read('praw.ini')
-search_phrase = config["CONFIG"]["search_phrase"]
-delete_phrase = config["CONFIG"]["delete_phrase"]
-reply_phrase = config["CONFIG"]["reply_phrase"]
-max_length = int(config["CONFIG"]["max_length"])
 reddit = praw.Reddit("USER")
-subreddit = reddit.subreddit(config["CONFIG"]["subreddit"])
+subreddit = reddit.subreddit("testingground4bots")
+max_length = 20
+search_phrase = "!dropthemic"
+delete_phrase = "delete pls"
+reply_phrase = '''#🎤 Drop.
+
+***
+
+^(I'm a bot. Reply with **delete pls** to remove.)
+'''
 
 if not os.path.isfile("posts_replied_to.txt"):
   posts_replied_to = []
