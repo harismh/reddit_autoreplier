@@ -1,0 +1,8 @@
+# MacOS system files #
+
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.DS_Store
+
