@@ -9,3 +9,6 @@ Thumbs.db
 # Bot log #
 posts_replied_to.txt
 
+# Python files #
+*.pyc
+
