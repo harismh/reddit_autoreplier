@@ -15,6 +15,8 @@ REPLY_PHRASE = '''#🎤 Drop.
 ^(I'm a bot. Reply with **delete pls** to remove.)
 '''
 
+reply_count = 0
+
 if not os.path.isfile("posts_replied_to.txt"):
     posts_replied_to = []
 else:
@@ -46,6 +48,6 @@ except KeyboardInterrupt:
         for id in posts_replied_to:
             file.write(id + "\n")
     print("\n--------")
-    print("Replies saved to posts_replied_to.txt")
+    print("{0} replies saved to posts_replied_to.txt").format(reply_count)
 
 sys.exit()
