@@ -3,8 +3,8 @@ import re
 import os
 import sys
 
-REDDIT = praw.reddit("USER")
-SUBREDDIT = REDDIT.subreddit("testingground4bots")
+# Config
+TARGET_SUBREDDIT = "testingground4bots"
 MAX_LENGTH = 20
 SEARCH_PHRASE = "!dropthemic"
 DELETE_PHRASE = "delete pls"
@@ -14,6 +14,10 @@ REPLY_PHRASE = '''#🎤 Drop.
 
 ^(I'm a bot. Reply with **delete pls** to remove.)
 '''
+
+# Init
+REDDIT = praw.reddit("USER")
+SUBREDDIT = REDDIT.subreddit(TARGET_SUBREDDIT)
 
 reply_count = 0
 
