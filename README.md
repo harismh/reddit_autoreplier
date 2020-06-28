@@ -8,7 +8,7 @@ Small Reddit bot script that replies to comments using key phrases. Built using 
 
 2. Select create app. Select the "script" option. Enter a name and a redirect url _(can be anything, but usually is the url to your Reddit account)_.
 
-3. Copy the generated client*secret and client_id *(located below application's name)\_ into `praw.ini`.
+3. Copy the generated client secret and client id _(located below application's name)_ into `praw.ini`.
 
 4. Then, run:
 
